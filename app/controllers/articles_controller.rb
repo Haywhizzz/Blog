@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
         @article = current_user.articles.build(article_params)
         if @article.save
             flash[:success] = "your Article is created"
-            redirect_to root_path
+            redirect_to article_path(@article)
         else
             flash[:alert] = "something went wrong!!"
             render 'new'

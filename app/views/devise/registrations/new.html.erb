@@ -1,16 +1,17 @@
-<h2>Sign up</h2>
+<div class="w-100 d-flex flex-column align-items-center py-2">
+<h2 class="my-3">Sign Up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true%>
+    <%= f.text_field :name, class: 'form-control margin-100 field-width', autofocus: true%>
   </div>
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, class: 'form-control margin-100 field-width', autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
@@ -18,17 +19,20 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+    <%= f.password_field :password, class: 'form-control margin-100 field-width', autocomplete: "new-password" %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, class: 'form-control margin-100 field-width', autocomplete: "new-password" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+  <div class="actions d-flex flex-row p-3">
+        <%= f.submit "Sign up", :class => "btn btn-secondary" %>
+        <p class="mx-1 pt-2">Already have an account? </p> 
+        
+        
+      </div>
+    <% end %>
+  <%= render "devise/shared/links" %>
+</div>
