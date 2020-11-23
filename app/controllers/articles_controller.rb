@@ -10,10 +10,10 @@ class ArticlesController < ApplicationController
     def create
         @article = current_user.articles.build(article_params)
         if @article.save
-            flash[:success] = "you Article is created"
-            redirect_to article_path(@article)
+            flash[:success] = "your Article is created"
+            redirect_to root_path
         else
-            flash[:alert] = "something wrong!!"
+            flash[:alert] = "something went wrong!!"
             render 'new'
         end
     end

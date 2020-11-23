@@ -1,0 +1,9 @@
+<%= form_with(model: @article, local: true) do |f| %>
+ <%= f.label :title, "Title" %>
+ <%= f.text_field :title%>
+<%= f.label :content, "Content" %>
+ <%= f.text_area :content%>
+<%= f.label :image, "Upload image" %>
+ <%= f.file_field :image %>
+<%= f.submit "Publish", class:"btn btn-primary" %>
+<% end %>

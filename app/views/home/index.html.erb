@@ -1,1 +1,4 @@
-<h1>This is the home</h1> 
+<% @articles.each do |a|%>
+<%= link_to a.title, articles_path(a)%>
+<%= image_tag a.image.url %>
+<%end%>
