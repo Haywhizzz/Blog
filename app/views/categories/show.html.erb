@@ -1,0 +1,6 @@
+<% @category.each do |c| %>
+<%= image_tag c.image.url %>
+<%= link_to c.title, category_path(c)%>
+<p><%= c.content %></p>          
+<%= link_to "SEE MORE ", category_path(c)%>
+<%end%>

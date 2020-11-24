@@ -5,5 +5,7 @@
  <%= f.text_area :content%>
 <%= f.label :image, "Upload image" %>
  <%= f.file_field :image %>
+ <%= f.label :list_of_categories, "Category" %>
+ <%= f.text_area :list_of_categories %>
 <%= f.submit "Publish", class:"btn btn-primary" %>
 <% end %>
