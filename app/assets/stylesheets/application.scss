@@ -14,3 +14,83 @@
  *= require_self
  */
 @import "bootstrap";
+$dark: #191919;
+$orange: #fd6000;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 66px;
+    margin-bottom: 50px;
+    max-height: 500vh;
+    clear: both;
+}
+
+.best-section {
+    .hv-100 {
+        height: 46vh;
+    }
+
+    img {
+        object-fit: cover;
+        height: 50%;
+    }
+}
+
+.show-cate {
+    img {
+        object-fit: fill;
+        height: 20rem;
+    }
+}
+
+.article-section {
+    img {
+        object-fit: contain;
+        height: 50%;
+        width: 70%;
+    }
+}
+
+a:hover {
+    color: $orange !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+.alert {
+    border-radius: 0;
+}
+
+.alert:not(:last-child) {
+    margin-top: -22px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $orange;
+}
+
+.fa {
+    padding: 3px;
+    font-size: 16px;
+    width: 27px;
+    border-radius: 47%;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 0;
+    color: $dark;
+    background-color: $orange;
+}
+

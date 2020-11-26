@@ -20,7 +20,7 @@ class CategoriesController < ApplicationController
             flash[:success] = "Your Category is created"
             redirect_to category_path(@category)
         else
-            flash[:alert] = "Something went wrong!!"
+            flash[:alert] = "Something went wrong!"
             render 'new'
         end 
   end
@@ -32,10 +32,10 @@ class CategoriesController < ApplicationController
   def update
     @category = Category.find(params[:id])
     if @category.update(article_params)
-      flash[:success] = "your Category is  updated "
+      flash[:success] = "Your Category is  updated "
       redirect_to category_path(@category)
     else
-      flash[:alert] = "something wrong!!"
+      flash[:alert] = "Something went wrong!"
       render 'edit'
     end
 
@@ -44,19 +44,19 @@ class CategoriesController < ApplicationController
   def destroy
     @category = Category.find(params[:id])
     if @category.destroy
-      flash[:success] = "your category is  deleted "
+      flash[:success] = "Your category is deleted "
     else
-      flash[:alert] = "something wrong!!"
+      flash[:alert] = "Something went wrong!"
     end
     redirect_to root_path
   end
 
 private
     def category_params
-        params.require(:category).permit(:name)
+      params.require(:category).permit(:name)
     end  
 
     def set_category
     @category = Category.find(params[:id])
-  end
+    end
 end
