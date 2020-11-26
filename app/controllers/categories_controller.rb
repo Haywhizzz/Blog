@@ -1,14 +1,17 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user!, expect: %i[edit update new create]
+  before_action :set_category, only: %i[show edit update destroy]
+
     def index 
         @categories = Category.all  
     end
 
   def show
-      @category = Category.find(params[:id])
+      
   end
 
    def edit
-      @category = Category.find(params[:id])
+      
   end
 
   def create
