@@ -17,6 +17,17 @@
 $dark: #191919;
 $orange: #fd6000;
 
+@font-face {
+    font-family: 'Lato';
+    src: url(./assets/fonts/lato/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/fonts/roboto/roboto-Regular.ttf) format('truetype');
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +40,7 @@ body {
     max-height: 500vh;
     clear: both;
 }
+
 
 .big-section {
     .hv-100 {
@@ -80,6 +92,15 @@ footer {
     left: 0;
     right: 0;
     background-color: $orange;
+    font-family: 'roboto';
+}
+
+.content-article {
+    font-family: 'roboto';
+}
+
+.title {
+    font-family: 'roboto';
 }
 
 .fab {
