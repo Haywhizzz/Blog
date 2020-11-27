@@ -6,6 +6,8 @@ gem 'bootstrap', '~> 4.5.3'
 gem 'font_awesome5_rails'
 gem 'hirb'
 gem 'jquery-rails'
+gem 'cloudinary', require: false
+gem 'paperclip-cloudinary'
 gem 'paperclip', '~> 6.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'

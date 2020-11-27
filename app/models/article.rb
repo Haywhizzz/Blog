@@ -1,13 +1,17 @@
 class Article < ApplicationRecord
   belongs_to :author, class_name: 'User'
-  has_attached_file :image, presence: true
+  has_many :relationships, dependent: :destroy
+  has_many :categories, through: :relationships
+  has_many :votes, dependent: :destroy
+  has_attached_file :image
+                    # storage: :cloudinary,
+                    # path: ':class/:id/:style/:filename'
   validates :title, presence: true, length: { in: 3..20 }
   validates :content, presence: true, length: { maximum: 1000 }
   validates_attachment_content_type :image, content_type: ['image/jpg', 'image/jpeg', 'image/png']
-  has_many :votes, dependent: :destroy
-  has_many :relationships, dependent: :destroy
+  validates_attachment_presence :image
+  
 
-  has_many :categories, through: :relationships
 
   def category_list
     categories.collect(&:name).join(', ')
