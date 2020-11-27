@@ -1,5 +1,5 @@
 class VotesController < ApplicationController
-    before_action :authenticate_user!
+  before_action :authenticate_user!
   before_action :set_votes
   def create
     @vote = current_user.votes.new(article_id: @article.id)
@@ -30,4 +30,3 @@ class VotesController < ApplicationController
     @article = Article.find(params[:article_id])
   end
 end
-

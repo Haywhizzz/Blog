@@ -9,4 +9,3 @@ class HomeController < ApplicationController
     @most_voted = @votes_array.max(1).first
   end
 end
-
