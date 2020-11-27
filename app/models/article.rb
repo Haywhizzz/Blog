@@ -5,7 +5,6 @@ class Article < ApplicationRecord
   validates :content, presence: true, length: { maximum: 1000 }
   validates_attachment_content_type :image, content_type: ['image/jpg', 'image/jpeg', 'image/png']
   has_many :votes, dependent: :destroy
-  @articles = Article.all.by_most_recent
   has_many :relationships, dependent: :destroy
 
   has_many :categories, through: :relationships
