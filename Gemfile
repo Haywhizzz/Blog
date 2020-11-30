@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 gem 'bootstrap', '~> 4.5.3'
-gem 'cloudinary', require: false
+gem 'cloudinary'
 gem 'font_awesome5_rails'
 gem 'hirb'
 gem 'jquery-rails'
