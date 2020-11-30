@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: ds90fnsot
+  api_key: '122634527627531'
+  api_secret: Ezup3SVsbQi5iJcMGOgsRLnV0ek
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: ds90fnsot
+  api_key: '122634527627531'
+  api_secret: Ezup3SVsbQi5iJcMGOgsRLnV0ek
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: ds90fnsot
+  api_key: '122634527627531'
+  api_secret: Ezup3SVsbQi5iJcMGOgsRLnV0ek
+  enhance_image_tag: true
+  static_file_support: false
