@@ -9,7 +9,6 @@ gem 'hirb'
 gem 'jquery-rails'
 gem 'paperclip', '~> 6.1'
 gem 'paperclip-cloudinary'
-gem 'paperclip-cloudinary'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use postgresql as the database for Active Record
