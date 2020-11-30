@@ -3,12 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 gem 'bootstrap', '~> 4.5.3'
-gem 'paperclip-cloudinary'
 gem 'cloudinary', require: false
 gem 'font_awesome5_rails'
 gem 'hirb'
 gem 'jquery-rails'
 gem 'paperclip', '~> 6.1'
+gem 'paperclip-cloudinary'
 gem 'paperclip-cloudinary'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'

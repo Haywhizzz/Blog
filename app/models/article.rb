@@ -6,6 +6,7 @@ class Article < ApplicationRecord
   has_attached_file :image
                     storage: :cloudinary,
                     path: ':class/:id/:style/:filename'
+                    
   validates :title, presence: true, length: { in: 3..20 }
   validates :content, presence: true, length: { maximum: 1000 }
   validates_attachment_content_type :image, content_type: ['image/jpg', 'image/jpeg', 'image/png']
