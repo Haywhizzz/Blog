@@ -14,7 +14,7 @@ Microverse Ruby on Rails capstone project. This project is a blogging app, where
 
 ## Live Demo Website
 
-Click the following https://blogaboutcats2.herokuapp.com/ to see a live version of the site.
+Click the following https://glacial-ocean-56338.herokuapp.com/ to see a live version of the site.
 
 ![screenshot](./app/assets/images/screenshot1.png)<br>
 ![screenshot](./app/assets/images/screenshot2.png)<br>
