@@ -47,13 +47,7 @@ After cloning the project, you should move into the directory where the project 
     rails db:migrate
 ```
 
-6. Step 6 If you want to have demo content and test user already created, run this:
-
-```bash
-    rails db:seed 
-```
-
-7. Step 7
+6. Step 6
 
 ```bash
     Rails s
