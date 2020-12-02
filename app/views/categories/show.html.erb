@@ -8,10 +8,10 @@
     
         <div class="col-md-3">
 
-          <%= link_to c.title, article_path(c), class:"text-orange h2"%>
-          <hr class="w-50">
+          <%= link_to c.title, article_path(c), class:"h3 show-title"%>
+          <hr>
           <p>  <%= c.content.first(80) %></p>
-           <%= link_to "SEE MORE ", article_path(c), class:" card-link small text-orange"%>
+           <%= link_to "SEE MORE ", article_path(c), class:" card-link small"%>
 
         </div>
        <%end%>
