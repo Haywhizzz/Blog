@@ -1,24 +1,87 @@
-# README
+# Microverse Capstone Project - Blog app
+Microverse Ruby on Rails capstone project. This project is a blogging app, where users can register, start writing their own articles, read articles written by others, and give likes to those articles.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project features
 
-Things you may want to cover:
+- Users can create accounts and log in.
+- When logged in, users can create articles, update or delete them.
+- When logged in users can like articles.
+- Featured article is showed at the top which is the most liked article.
+- Two bottoms featured images are picked last ones from two different categories.
+- Data when an article is created and who created it is showed on the article on the main page.
+- When a user clicks on the specific category it sorts articles just by that category
+- In categories right side field users can see how many articles each category has.
 
-* Ruby version
+## Live Demo Website
 
-* System dependencies
+Click the following https://glacial-ocean-56338.herokuapp.com/ to see a live version of the site.
 
-* Configuration
+![screenshot](./app/assets/images/screenshot1.png)<br>
+![screenshot](./app/assets/images/screenshot2.png)<br>
 
-* Database creation
+## Built With
+- Ruby 2.6.5
+- Ruby on Rails 6.0.3.4
 
-* Database initialization
+#### To get this project on your local machine, follow these steps:
+1. To get this project up and running locally, you should have [Ruby](https://www.ruby-lang.org/en/) installed on your computer.
 
-* How to run the test suite
+2. Run this command `git clone https://github.com/Haywhizzz/Blog.git` in the desired folder to clone the repository on to your local machine.
+After cloning the project, you should move into the directory where the project is stored, for example `cd Blog`.
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Then run the following command install the necessary dependencies
 
-* Deployment instructions
+```bash
+    bundle install
+```
 
-* ...
+4. Step 4
+
+```bash
+    rails db:create
+```
+
+5. Step 5
+
+```bash
+    rails db:migrate
+```
+
+6. Step 6
+
+```bash
+    Rails s
+```
+
+Sometimes you can be asked to check files with yarn, so run this command:
+
+```bash
+    yarn install --check files 
+```
+#### To run the tests, run:
+```bash
+    bundle exec rspec
+```
+
+## Authors
+
+👤 **Oyeleke Ayomide**
+
+- Github: [@Haywhizzz](https://github.com/Haywhizzz)
+- Twitter: [@Haywhizzz](https://twitter.com/Haywhizzz)
+- Linkedin: [Haywhizzz](https://www.linkedin.com/in/oyeleke-ayomide)
+
+## Show your support
+
+Give an ⭐️ if you like this project!
+
+## Acknowledgments
+
+- This project was originally taken from [The Odin project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/your-first-rails-application-ruby-on-rails).
+- The project was inspired by the [Microverse](https://www.microverse.org/) program.
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
+
+Design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
